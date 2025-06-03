@@ -20,8 +20,8 @@ function Square() {
       <div className="board-row">
         <button className="square">4</button>
         <button className="square">5</button>
-        <button className="square"></button>
-      </div>6
+        <button className="square">6</button>
+      </div>
 
       <div className="board-row">
         <button className="square">7</button>
