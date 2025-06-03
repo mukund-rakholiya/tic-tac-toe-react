@@ -14,4 +14,4 @@ function Square() {
   );
 }
 
-export default App;
+export default Square;
