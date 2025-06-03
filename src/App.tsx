@@ -11,26 +11,26 @@ function App() {
 }
 
 const Board: React.FC = () => {
-  const [array, setArray] = useState<Array<string>>(Array(9).fill(null))
+  const [squares, setSquares] = useState<Array<string>>(Array(9).fill(null))
 
   return (
     <>
       <div className="board-row">
-        <Square value={array[0]} />
-        <Square value={array[1]} />
-        <Square value={array[2]} />
+        <Square value={squares[0]} />
+        <Square value={squares[1]} />
+        <Square value={squares[2]} />
       </div>
 
       <div className="board-row">
-        <Square value={array[3]} />
-        <Square value={array[4]} />
-        <Square value={array[5]} />
+        <Square value={squares[3]} />
+        <Square value={squares[4]} />
+        <Square value={squares[5]} />
       </div>
 
       <div className="board-row">
-        <Square value={array[6]} />
-        <Square value={array[7]} />
-        <Square value={array[8]} />
+        <Square value={squares[6]} />
+        <Square value={squares[7]} />
+        <Square value={squares[8]} />
       </div>
 
     </>
