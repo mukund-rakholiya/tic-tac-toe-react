@@ -11,17 +11,23 @@ function App() {
 function Square() {
   return (
     <>
-      <button className='square'>X</button>
-      <button className='square'>X</button>
-      <button className='square'>X</button>
+      <div className="board-row">
+        <button className="square"></button>
+        <button className="square"></button>
+        <button className="square"></button>
+      </div>
 
-      <button className='square'>X</button>
-      <button className='square'>X</button>
-      <button className='square'>X</button>
+      <div className="board-row">
+        <button className="square"></button>
+        <button className="square"></button>
+        <button className="square"></button>
+      </div>
 
-      <button className='square'>X</button>
-      <button className='square'>X</button>
-      <button className='square'>X</button>
+      <div className="board-row">
+        <button className="square"></button>
+        <button className="square"></button>
+        <button className="square"></button>
+      </div>
 
     </>
   );
