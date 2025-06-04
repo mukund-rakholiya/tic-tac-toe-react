@@ -11,7 +11,11 @@ function App() {
 }
 
 const Board: React.FC = () => {
-  const [squares, setSquares] = useState<Array<string>>(Array(9).fill(null))
+  const [squares, setSquares] = useState<Array<string>>(Array(9).fill(null));
+
+  function handleClick() {
+
+  }
 
   return (
     <>
