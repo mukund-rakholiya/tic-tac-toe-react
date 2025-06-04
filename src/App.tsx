@@ -10,7 +10,7 @@ function App() {
   );
 }
 
-function calculateWinner(squares) {
+function calculateWinner(squares: Array<string>) {
   const lines = [
     [0, 1, 2],
     [3, 4, 5],
@@ -38,7 +38,7 @@ const Board: React.FC = () => {
   const [xIsNext, setXIsNext] = useState<boolean>(true);
 
   function handleClick(i: number) {
-    if (squares[i]) {
+    if (squares[i] || calculateWinner(squares)) {
       return;
     }
 
