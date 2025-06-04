@@ -16,8 +16,11 @@ const Board: React.FC = () => {
 
   function handleClick(i: number) {
     const nextSquares = squares.slice();
-    nextSquares[i] = "X";
+
+    const value = xIsNext ? "O" : "X";
+    nextSquares[i] = value;
     setSquares(nextSquares);
+    setXIsNext(!xIsNext);
   }
 
   return (
