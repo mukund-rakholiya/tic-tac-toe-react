@@ -15,6 +15,9 @@ const Board: React.FC = () => {
   const [xIsNext, setXIsNext] = useState<boolean>(true);
 
   function handleClick(i: number) {
+    if (squares[i]) {
+      return;
+    }
     const nextSquares = squares.slice();
 
     const value = xIsNext ? "O" : "X";
