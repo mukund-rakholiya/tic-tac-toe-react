@@ -10,6 +10,10 @@ function App() {
   );
 }
 
+function calculateWinner(squares) {
+
+}
+
 const Board: React.FC = () => {
   const [squares, setSquares] = useState<Array<string>>(Array(9).fill(null));
   const [xIsNext, setXIsNext] = useState<boolean>(true);
@@ -18,6 +22,7 @@ const Board: React.FC = () => {
     if (squares[i]) {
       return;
     }
+
     const nextSquares = squares.slice();
 
     const value = xIsNext ? "O" : "X";
