@@ -12,6 +12,7 @@ function App() {
 
 const Board: React.FC = () => {
   const [squares, setSquares] = useState<Array<string>>(Array(9).fill(null));
+  const [xIsNext, setXIsNext] = useState<boolean>(true);
 
   function handleClick(i: number) {
     const nextSquares = squares.slice();
