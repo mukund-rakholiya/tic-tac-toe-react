@@ -48,8 +48,8 @@ const Board: React.FC = () => {
 };
 
 type SquareProps = {
-  value: string
-  onSquareClick: Function
+  value: string;
+  onSquareClick: Function;
 };
 
 const Square: React.FC<SquareProps> = ({ value, onSquareClick }) => {
