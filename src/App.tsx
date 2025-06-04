@@ -45,7 +45,7 @@ type SquareProps = {
 const Square: React.FC<SquareProps> = ({ value, onSquareClick }) => {
   return (
     <>
-      <button className="square" onClick={() => onSquareClick} > {value} </button>
+      <button className="square" onClick={onSquareClick} > {value} </button>
     </>
   );
 };
